@@ -10,6 +10,7 @@ import {
   UserRoundCheck,
   MessageSquare,
   Eye,
+  Trash2
 } from "lucide-react";
 
 function Jobs() {
@@ -52,8 +53,8 @@ function Jobs() {
                   Senior Product Designer
                 </h1>
                 <p className="text-gray-medium text-sm ">posted 2 days ago</p>
-                <Badge className="text-green-700 bg-green-200 py-0 px-4">
-                  <span className="relative bottom-1.5 pr-1 font-extrabold text-xl ">
+                <Badge className=" text-green-text border border-green-border bg-green-background py-0">
+                  <span className="relative bottom-1.5 pr-1 text-green-dot font-extrabold text-xl ">
                     .
                   </span>
                   Open
@@ -73,7 +74,7 @@ function Jobs() {
                 </p>
               </div>
               <Separator />
-              <div className="pl-24 my-8 flex justify-between">
+              <div className="pl-24 my-8 flex gap-16">
                 <div>
                   <h1 className="text-gray-medium-dark mb-2">
                     Skills Required
@@ -173,7 +174,7 @@ function Jobs() {
                   <img src="/Rectangle 43.svg" alt="atlasian-img" />
                   <h1 className="text-atlassian-text">Atlassian</h1>
                 </div>
-                <div className="grid grid-cols-2 gap-6">
+                <div className="grid grid-cols-2 gap-6 max-w-3xl">
                   <div>
                     <p className="text-gray-medium-dark">Company size</p>
                     <h1 className="text-bold">1k - 2k Employees</h1>
@@ -201,16 +202,16 @@ function Jobs() {
                 </div>
               </div>
             </div>
-            <Separator className="h-screen" orientation="vertical" />
+            <Separator className="h-auto" orientation="vertical" />
             <div className="w-1/4">
               <div className="mx-6 mt-8 mb-6">
-                <div className="flex justify-between">
-                  <Button variant="outline" className="text-orange">
-                    <img src="/trash-03.svg" alt="trash-img" />
+                <div className="flex justify-between gap-4">
+                  <Button variant="outline" className="text-orange w-40">
+                  <Trash2 className="size-4 mr-3" />
                     Delete job
                   </Button>
-                  <Button variant="outline" className="text-orange">
-                    <Pencil /> Edit job
+                  <Button variant="outline" className="text-orange w-40">
+                    <Pencil className="size-4 mr-3" /> Edit job
                   </Button>
                 </div>
                 <div className="p-2">
