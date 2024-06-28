@@ -10,7 +10,7 @@ import {
   UserRoundCheck,
   MessageSquare,
   Eye,
-  Trash2
+  Trash2,
 } from "lucide-react";
 
 function Jobs() {
@@ -207,7 +207,7 @@ function Jobs() {
               <div className="mx-6 mt-8 mb-6">
                 <div className="flex justify-between gap-4">
                   <Button variant="outline" className="text-orange w-40">
-                  <Trash2 className="size-4 mr-3" />
+                    <Trash2 className="size-4 mr-3" />
                     Delete job
                   </Button>
                   <Button variant="outline" className="text-orange w-40">
