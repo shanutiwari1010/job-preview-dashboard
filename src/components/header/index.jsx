@@ -1,5 +1,4 @@
 import React from "react";
-import { cn } from "@/lib/utils";
 import {
   Tabs,
   TabsList,
@@ -11,14 +10,14 @@ import { Bell, Briefcase, MessageSquare, HandCoins } from "lucide-react";
 
 function Header() {
   return (
-    <header className=" fixed px-10 items-center py-2 z-50 top-0 shadow-sm  w-full backdrop-blur-md ">
-      <nav className="flex justify-between items-center ">
-        <div className="text-orange bg-gray-background py-4 px-7 flex">
+    <header className="fixed px-10 items-center py-[18px] z-50 top-0 shadow-sm w-full backdrop-blur-md">
+      <nav className="flex justify-between items-center">
+        <div className="text-orange font-bold bg-gray-background py-5 px-7">
           Logo
         </div>
-        <Tabs defaultValue="jobs" className=" w-[134.5px] py-4 h-[74px] bg-white ">
-          <TabsList className="border border-gray rounded-full bg-white ">
-            <TabsTrigger value="jobs" className=" rounded-full  text-gray-light">
+        <Tabs defaultValue="jobs" className="w-fit p-2 bg-background">
+          <TabsList className="border-0.5 border-gray rounded-full bg-background">
+            <TabsTrigger value="jobs" className="rounded-full text-gray-light">
               <Briefcase className="size-6 pr-1" />
               Jobs
             </TabsTrigger>
